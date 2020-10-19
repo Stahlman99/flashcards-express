@@ -5,4 +5,9 @@ html(lang="en")
   body
     include \includes\header.pug
     block content
+    br
+    if name
+      form(action='/goodbye', method='post')
+        button(type='submit') Sign Out
+      br
     include \includes\footer.pug
